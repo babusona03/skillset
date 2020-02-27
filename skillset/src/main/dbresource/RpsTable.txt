@@ -1,0 +1,10 @@
+CREATE TABLE rps_gamedata(
+serial NUMBER(8),
+user_choice VARCHAR2(10)NOT NULL,
+system_choice VARCHAR2(10) NOT NULL,
+time_stamp TIMESTAMP NOT NULL,
+winner VARCHAR2(10) NOT NULL,
+CONSTRAINT pk_sl PRIMARY KEY(serial),
+CONSTRAINT ck_user_choice CHECK (system_choice IN ('ROCK','PAPER','SCISSORS')),
+CONSTRAINT ck_winner CHECK ( winner IN ('USER','SYSTEM','TIE'))
+);

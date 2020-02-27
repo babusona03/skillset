@@ -1,0 +1,1 @@
+INSERT INTO rps_gamedata (user_choice,system_choice,winner) VALUES('PAPER','PAPER','TIE');

@@ -1,0 +1,7 @@
+CREATE OR REPLACE TRIGGER trg_rps_timestamp BEFORE INSERT ON rps_gamedata
+FOR EACH ROW
+BEGIN
+SELECT current_timestamp
+INTO :NEW.time_stamp
+FROM DUAL;
+END;

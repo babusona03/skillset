@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+<display-name>MiniProjectWarehouse</display-name>
+  <welcome-file-list>   
+    <welcome-file>index.jsp</welcome-file>    
+  </welcome-file-list>
+  <context-param>
+    <param-name>oradbUid</param-name>
+    <param-value>MRCODER</param-value>
+  </context-param>
+  <context-param>
+    <param-name>oradbPasswd</param-name>
+    <param-value>password</param-value>
+  </context-param>
+  <context-param>
+    <param-name>oradbUrl</param-name>
+    <param-value>jdbc:oracle:thin</param-value>
+  </context-param>
+  <context-param>
+    <param-name>oradbHostName</param-name>
+    <param-value>localhost</param-value>
+  </context-param>
+  <context-param>
+    <param-name>oradbDriverType</param-name>
+    <param-value>thin</param-value>
+  </context-param>
+  <context-param>
+    <param-name>oradbSid</param-name>
+    <param-value>XE</param-value>
+  </context-param>
+  <context-param>
+    <param-name>oradbPortNumber</param-name>
+    <param-value>1521</param-value>
+  </context-param>
+</web-app>
